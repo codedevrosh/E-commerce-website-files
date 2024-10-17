@@ -1,0 +1,818 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background for black theme */
+    color: #f0f0f0; /* Light text color for better contrast */
+}
+
+header {
+    background-color: #000; /* Pure black header */
+    color: #ff4c4c; /* Red text for header links */
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #ff4c4c; /* Red accent border */
+}
+
+nav a {
+    color: #ff4c4c; /* Red navigation links */
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    color: #ff4c4c; /* Red for headings */
+}
+
+main {
+    padding: 30px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #181818; /* Dark gray/black */
+    color: #ff4c4c; /* Red text */
+    padding: 50px;
+    text-align: center;
+}
+
+.hero p {
+    color: #f0f0f0; /* Lighter text color for readability */
+}
+
+.hero .button {
+    background-color: #ff4c4c;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    margin-top: 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.hero .button:hover {
+    background-color: #e60000; /* Darker red on hover */
+}
+
+/* Featured Products */
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: #202020; /* Dark background for products */
+    padding: 20px;
+    border: 1px solid #ff4c4c; /* Red border around products */
+    width: 250px;
+    text-align: center;
+    margin: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ff4c4c;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    color: #ff4c4c;
+    margin: 10px 0;
+}
+
+.product p {
+    color: #f0f0f0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+button:hover {
+    background-color: #e60000;
+}
+
+/* Categories Section */
+.categories {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.category {
+    background-color: #202020;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    border-radius: 10px;
+    border: 1px solid #ff4c4c;
+}
+
+.category img {
+    width: 300px;
+    height: 200px;
+    border-bottom: 1px solid #ff4c4c;
+    margin-bottom: 10px;
+}
+
+.category h3 {
+    color: #ff4c4c;
+}
+
+.category p {
+    color: #f0f0f0;
+}
+
+.category .button {
+    background-color: #ff4c4c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.category .button:hover {
+    background-color: #e60000;
+}
+
+/* Special Offers */
+.special-offers {
+    background-color: #181818;
+    padding: 50px;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 1px solid #ff4c4c;
+}
+
+.offer {
+    background-color: #202020;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ff4c4c;
+    display: inline-block;
+}
+
+.offer h3 {
+    color: #ff4c4c;
+}
+
+.offer p {
+    color: #f0f0f0;
+}
+
+.offer .button {
+    background-color: #ff4c4c;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.offer .button:hover {
+    background-color: #e60000;
+}
+
+/* Testimonials */
+.testimonials {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.testimonial {
+    background-color: #202020;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    width: 30%;
+    border-radius: 10px;
+    border: 1px solid #ff4c4c;
+    color: #f0f0f0;
+}
+
+.testimonial strong {
+    display: block;
+    margin-top: 15px;
+    color: #ff4c4c;
+}
+
+/* Newsletter */
+.newsletter {
+    background-color: #181818;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 1px solid #ff4c4c;
+}
+
+.newsletter form {
+    margin-top: 20px;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ff4c4c;
+    background-color: #121212;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #e60000;
+}
+
+footer {
+    background-color: #000;
+    color: #ff4c4c;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #ff4c4c;
+    margin-top: 50px;
+}
+
+/* Product List Grid */
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: #202020;
+    padding: 20px;
+    border: 1px solid #ff4c4c;
+    width: 250px;
+    text-align: center;
+    margin: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 100%;
+    height: 250px;
+    border-bottom: 1px solid #ff4c4c;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    color: #ff4c4c;
+    margin: 10px 0;
+}
+
+.product p {
+    color: #f0f0f0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+button:hover {
+    background-color: #e60000;
+}
+
+/* General body and header settings */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background for black theme */
+    color: #f0f0f0; /* Light text color for better contrast */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000; /* Black header */
+    color: #ff4c4c; /* Red for header text */
+    padding: 15px;
+    border-bottom: 2px solid #ff4c4c; /* Red accent at bottom of header */
+    position: relative;
+}
+
+/* Navigation menu on the left */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Align links vertically */
+    position: fixed; /* Fix the navigation to the left side */
+    left: 0;
+    top: 0;
+    height: 100vh; /* Full viewport height */
+    background-color: #181818; /* Slightly lighter black */
+    width: 200px; /* Fixed width for the sidebar */
+}
+
+nav ul li {
+    margin: 20px 0;
+}
+
+nav ul li a {
+    color: #ff4c4c; /* Red navigation links */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    display: block; /* Makes the entire area clickable */
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: #ff4c4c;
+    color: white;
+}
+
+/* Store name on the right */
+.store-name {
+    font-size: 2em;
+    color: #ff4c4c;
+    margin-right: 30px; /* Keep some spacing from the right edge */
+}
+
+.store-name:hover {
+    color: #e60000; /* Darker red on hover */
+}
+
+/* Main content area - shift due to left sidebar */
+main {
+    margin-left: 220px; /* Offset the content by the width of the left sidebar */
+    padding: 20px;
+}
+
+/* Footer adjustments */
+footer {
+    background-color: #000;
+    color: #ff4c4c;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #ff4c4c;
+    margin-top: 50px;
+    margin-left: 220px; /* Keep footer aligned with content */
+}
+/* Contact Form Styles */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #202020;
+    border: 1px solid #ff4c4c;
+    border-radius: 10px;
+}
+
+.contact-form label {
+    margin-bottom: 10px;
+    color: #ff4c4c;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #181818;
+    color: #f0f0f0;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid #ff4c4c;
+}
+
+.contact-form button {
+    padding: 12px 20px;
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.contact-form button:hover {
+    background-color: #e60000;
+}
+
+/* Loading Screen Styles */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    color: #e00f0f;
+    font-size: 2em;
+}
+
+#loading-screen h1 {
+    animation: pulse 1.5s infinite;
+}
+
+/* Pulse Animation for Loading Text */
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/loading-background.jpg'); /* Add your background image here */
+    background-size: cover;      /* Make sure the image covers the entire screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    color: white;
+    font-size: 2em;
+}
+
+/* Fade-out animation for the loading screen */
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* Main Content Styles */
+#main-content {
+    position: relative;
+    z-index: 1; /* Ensure the main content appears above the background */
+    padding: 20px;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8); /* Dark transparent background for header */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.store-name {
+    color: white;
+    font-size: 2em;
+}
+nav {
+    display: flex;
+    justify-content: space-between; /* Space between left and right sections */
+    align-items: center; /* Center items vertically */
+    background-color: #333; /* Background color for the nav */
+    padding:10px; /* Padding for the nav */
+
+}
+
+nav .nav-right {
+    display: flex; /* Flexbox for right side */
+    align-items: center; /* Center items vertically */
+    margin-right: 30px; /* Shift right section slightly to the left */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    display: inline; /* Horizontal layout */
+    margin-right: 15px; /* Spacing between links */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* White text color */
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
+nav .nav-right {
+    display: flex; /* Flexbox for right side */
+    align-items: center; /* Center items vertically */
+}
+
+.nav-link {
+    text-decoration: none; /* Remove underline */
+    color: red; /* Red color for the links */
+    margin-right: 10px; /* Spacing between links and separator */
+}
+
+.nav-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.separator {
+    color: red; /* Red color for the separator */
+    margin: 0 10px; /* Spacing around the separator */
+}
+
+.store-name {
+    color:#fff; /* Gold color for the store name */
+    font-size: 24px; /* Adjust font size */
+}
+
+/* Body and main styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #121212; /* Black background */
+    margin: 0;
+    padding: 0;
+    color: #fff; /* White text */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: #222; /* Dark background for header */
+    padding: 10px;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: #fff; /* White text */
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff0000; /* Red on hover */
+}
+
+.store-name {
+    text-align: center;
+    color: #ff0000; /* Red store name */
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/* Styling specific to login form */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #222; /* Dark background for form */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: relative; /* Ensure relative positioning for child elements */
+}
+
+.login-container h2 {
+    text-align: center;
+    color: #ff0000; /* Red for heading */
+    margin-bottom: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+.login-form label {
+    font-size: 14px;
+    color: #fff; /* White labels */
+    margin-bottom: 8px;
+    margin-top: 15px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #444; /* Darker border */
+    background-color: #333; /* Dark input background */
+    color: #fff; /* White text */
+    transition: all 0.3s ease;
+    box-sizing: border-box; /* Make sure padding doesn't push content out */
+    margin-bottom: 15px; /* Space between inputs */
+}
+
+/* Focus effect for input fields */
+.login-form input:focus {
+    border-color: #ff0000; /* Red border on focus */
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.3); /* Red glow on focus */
+    outline: none;
+}
+
+/* Button styling */
+.login-button {
+    padding: 12px;
+    background-color: #ff0000; /* Red button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    margin-top: 20px;
+    width: 100%; /* Full width button */
+}
+
+/* Button hover effect */
+.login-button:hover {
+    background-color: #d40000; /* Darker red on hover */
+}
+
+/* Register link styling */
+.login-container p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-container p a {
+    color: #ff0000; /* Red register link */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.login-container p a:hover {
+    color: #ff4d4d; /* Lighter red on hover */
+}
+
+
+/* Styling specific to register form */
+.register-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #222; /* Dark background for form */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: relative; /* Ensure relative positioning for child elements */
+}
+
+.register-container h2 {
+    text-align: center;
+    color: #ff0000; /* Red for heading */
+    margin-bottom: 20px;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+.register-form label {
+    font-size: 14px;
+    color: #fff; /* White labels */
+    margin-bottom: 8px;
+    margin-top: 15px;
+}
+
+.register-form input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #444; /* Darker border */
+    background-color: #333; /* Dark input background */
+    color: #fff; /* White text */
+    transition: all 0.3s ease;
+    box-sizing: border-box; /* Make sure padding doesn't push content out */
+    margin-bottom: 15px; /* Space between inputs */
+}
+
+/* Focus effect for input fields */
+.register-form input:focus {
+    border-color: #ff0000; /* Red border on focus */
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.3); /* Red glow on focus */
+    outline: none;
+}
+
+/* Button styling */
+.register-button {
+    padding: 12px;
+    background-color: #ff0000; /* Red button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    margin-top: 20px;
+    width: 100%; /* Full width button */
+}
+
+/* Button hover effect */
+.register-button:hover {
+    background-color: #d40000; /* Darker red on hover */
+}
+
+/* Login link styling */
+.register-container p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.register-container p a {
+    color: #ff0000; /* Red login link */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.register-container p a:hover {
+    color: #ff4d4d; /* Lighter red on hover */
+}
+
+
+
+
+
+
+
+

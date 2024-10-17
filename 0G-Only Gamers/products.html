@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - OG-Only GAmers</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/product.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home 🏠︎ </a></li>
+                <li><a href="/products.html">Products</a></li>
+                <li><a href="/top-sellers.html">Top Sellers</a></li>
+                <li><a href="/most-played.html">Most Played</a></li>
+                <li><a href="/cart.html">Cart 🛒<span id="cart-count"></span></a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1 class="store-name">OG - Only Gamers</h1>
+    </header>
+    
+    <main>
+        <h2>GAmes</h2>
+            <!-- Slider Section -->
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide active">
+                        <img src="/images/slides/game1.jpg" alt="Slide 1" class="slide-image">
+                        <div class="caption">God Of War 4</div>    
+                    </div>
+                    <div class="slide">
+                        <img src="/images/slides/game2.jpeg" alt="Slide 2" class="slide-image">
+                        <div class="caption">Grand Theft Auto 5</div>  
+                    </div>
+                    <div class="slide">
+                        <img src="/images/slides/game3.jpeg" alt="Slide 3" class="slide-image">
+                        <div class="caption">Red Dead Redemption 2</div>   
+                    </div>
+                    <div class="slide">
+                        <img src="/images/slides/game4.jpg" alt="Slide 4" class="slide-image">
+                        <div class="caption">Call Of Duty</div>  
+                    </div>
+                    <div class="slide">
+                        <img src="/images/slides/game5.jpg" alt="Slide 5" class="slide-image">
+                        <div class="caption">Assassin's Creed</div>    
+                    </div>
+                    <div class="slide">
+                        <img src="/images/slides/game6.jpg" alt="Slide 6" class="slide-image">
+                        <div class="caption">Far Cry</div>   
+                    </div>
+                    <div class="slide">
+                        <img src="/images/slides/game7.jpg" alt="Slide 7" class="slide-image">
+                        <div class="caption">Witcher 3:Wild Hunt</div>
+                    </div>
+                   
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+    
+            <!-- Products Section -->
+            <div class="product-section">
+                <div class="heading-container">
+                    <h2>All GAmes</h2>
+                </div>
+                
+                <div class="product-card">
+                    <img src="/images/game1.jpg" alt="Product 1" class="product-image">
+                    <h3>God of War 4</h3>
+                    <button class="btn add-to-cart" onclick="openModal('product1')">View Details</button>
+                </div>
+                <div class="product-card">
+                    <img src="/images/game2.jpeg" alt="Product 2" class="product-image">
+                    <h3>Grand Theft Auto 5</h3>
+                    <button class="btn add-to-cart" onclick="openModal('product2')">View Details</button>
+                </div>
+                <div class="product-card">
+                    <img src="/images/game3.jpeg" alt="Product 2" class="product-image">
+                    <h3>Red Dead Redemption 2</h3>
+                    <button class="btn add-to-cart" onclick="openModal('product3')">View Details</button>
+                </div>
+                <div class="product-card">
+                    <img src="/images/slides/game4.jpg" alt="Product 2" class="product-image">
+                    <h3>Call Of Duty</h3>
+                    <button class="btn add-to-cart" onclick="openModal('product4')">View Details</button>
+                </div>
+                <div class="product-card">
+                    <img src="/images/slides/game5.jpg" alt="Product 2" class="product-image">
+                    <h3>Assassin's Creed</h3>
+                    <button class="btn add-to-cart" onclick="openModal('product5')">View Details</button>
+                </div>
+                <div class="product-card">
+                    <img src="/images/slides/game6.jpg" alt="Product 2" class="product-image">
+                    <h3>Far Cry</h3>
+                    <button class="btn add-to-cart" onclick="openModal('product6')">View Details</button>
+                </div>
+                <div class="product-card">
+                    <img src="/images/slides/game7.jpg" alt="Product 2" class="product-image">
+                    <h3>Witcher 3:Wild Hunt</h3>
+                    <button class="btn add-to-cart" onclick="openModal('product7')">View Details</button>
+                </div>
+                
+                <!-- Add more products as needed -->
+            </div>
+            
+
+            <!-- Modal Structure -->
+                <div id="product-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <img id="modal-image" src="" alt="Product Image">
+                        <div class="modal-text">
+                            <h2 id="modal-title">Product Title</h2> <!-- Game Name -->
+                            <h3 id="modal-about-title">About</h3> 
+                            <p id="modal-about"></p> <!-- About section -->
+                            <h3 id="modal-genres-title">Genres</h3> >
+                            <div id="modal-genres"></div> 
+                            <h3 id="modal-reviews-title">Reviews</h3> 
+                            <div id="modal-reviews"> <!-- Reviews section -->
+                            </div>
+                            <div id="modal-price" style="color: #000000; margin-top: 10px; font-size: 18px; font-weight: bold;"></div>
+                            <button id="add-to-cart" onclick="addToCart()" class="add-to-cart-button">Add to Cart</button> <!-- Add to Cart button -->
+                        </div>
+                    </div>
+                </div>
+
+         <!-- Cart section on the product page -->
+                <div id="cart-section">
+                    <h2>Your Cart</h2>
+                    <div id="cart-items"></div>
+                    <div id="cart-total">Total: $0.00</div>
+                </div
+
+        
+    </main>
+
+    <footer>
+        <p>© 2024 OG-Only GAmers. All rights reserved.</p>
+    </footer>
+
+    
+    <script src="/js/product.js"></script>
+    <script src="/js/script.js"></script>
+
+</body>
+</html>

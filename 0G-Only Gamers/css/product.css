@@ -1,0 +1,352 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+    color: white; /* Text color */
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #222; /* Darker header */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 200px; /* Width of the sidebar */
+    position: fixed; /* Fixed position */
+    height: 100%; /* Full height */
+    background-color: #333; /* Dark sidebar */
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.sidebar li {
+    text-align: center; /* Center align items */
+    margin: 15px 0; /* Margin between items */
+}
+
+.sidebar a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Main Styles */
+main {
+    margin-left: 220px; /* Add margin for sidebar */
+    padding: 20px; /* Padding for main content */
+}
+
+
+
+/* Products Section Styles */
+.products-section {
+    margin-top: 40px; /* Spacing above products */
+}
+
+.product-card {
+    background-color: #222; /* Dark background for product card */
+    border: 1px solid #444; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside card */
+    margin: 10px; /* Margin around cards */
+    text-align: center; /* Center text */
+    transition: transform 0.2s; /* Animation on hover */
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.product-card img {
+    width: 100%; /* Responsive image */
+    height:200px; /* Maintain aspect ratio */
+}
+
+.price {
+    font-size: 1.2em; /* Larger price font */
+    color: #ff4c4c; /* Price color */
+}
+
+/* Modal container */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+    overflow: auto; /* Enable scrolling if content overflows */
+    padding-top: 20px; /* Space from the top */
+}
+
+/* Modal content layout */
+.modal-content {
+    display: flex; /* Flexbox for side-by-side layout */
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    max-width: 90%; /* Limits the modal width to 90% of the viewport */
+    margin: 0 auto; /* Centers the modal horizontally */
+    max-height: 90vh; /* Limits the modal height to 90% of the viewport */
+    overflow-y: auto; /* Allows scrolling for content overflow */
+    position: relative; /* Relative positioning for close button */
+}
+
+/* Image styling */
+#modal-image {
+    width: 40%; /* Width of the image section */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for the image */
+    margin-right: 20px; /* Space between image and text content */
+}
+
+/* Content section */
+.modal-text {
+    flex: 1; /* Take remaining space */
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #333; /* Color of close button */
+    font-size: 30px; /* Font size */
+    font-weight: bold; /* Font weight */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.close:hover {
+    color: #ff0000; /* Red hover for close button */
+}
+
+/* Title and About section styles */
+#modal-title {
+    font-size: 24px; /* Font size for the game title */
+    margin: 10px 0; /* Space around the title */
+}
+
+/* About section styling */
+#modal-about {
+    margin-top: 10px; /* Space above about section */
+    font-size: 16px; /* Font size for about */
+    background-color: #f9f9f9; /* Light grey background */
+    padding: 10px; /* Padding inside the about section */
+    border-left: 5px solid #ff0000; /* Red left border */
+    border-radius: 5px; /* Rounded corners for the about section */
+    color: #333; /* Dark text color for visibility */
+}
+
+/* Reviews section */
+#modal-reviews {
+    margin-top: 15px; /* Space above reviews */
+    font-size: 16px; /* Font size for reviews */
+    background-color: #f9f9f9; /* Light grey background */
+    padding: 10px; /* Padding inside the reviews section */
+    border-left: 5px solid #007bff; /* Blue left border for reviews */
+    border-radius: 5px; /* Rounded corners for the reviews section */
+    color: #333; /* Dark text color for visibility */
+}
+
+/* Add to Cart Button */
+.add-to-cart-button {
+    background-color: #ff0000; /* Red background */
+    color: #fff; /* White text */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding for button */
+    font-size: 16px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 15px; /* Space above the button */
+    display: inline-block; /* Inline block for proper spacing */
+}
+
+.add-to-cart-button:hover {
+    background-color: #e60000; /* Darker red on hover */
+}
+
+
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #222; /* Dark footer */
+}
+
+
+.product-section {
+    display: flex;
+    flex-wrap: wrap; /* Allows products to wrap to the next line */
+    justify-content: space-around; /* Centers the items */
+    padding: 20px; /* Adds padding around the section */
+}
+
+.product-card {
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Slight shadow */
+    margin: 10px; /* Space between cards */
+    padding: 10px; /* Padding inside cards */
+    text-align: center; /* Center text */
+    width: 200px; /* Fixed width for the product cards */
+}
+
+.product-image {
+    width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Rounded corners for images */
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+}
+
+.slider {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden; /* Ensure overflow is hidden */
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%; /* Each slide should take up full width */
+    transition: opacity 0.5s ease-in-out; /* Smooth opacity transition */
+}
+
+.slide-image {
+    width: 100%; /* Responsive images */
+    height: 625px;
+    object-fit: contain; 
+}
+
+.caption {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ff0000;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+}
+
+
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Hide non-active slides */
+.slide {
+    display: none; /* Hide all slides initially */
+}
+
+.slide.active {
+    display: flex; /* Show only the active slide */
+}
+
+h2 {
+    text-align: center; /* Center the text */
+    font-size: 1.5em; /* Adjust the size of the heading as needed */
+    margin: 10px 0; /* Add some margin for spacing */
+    color: #ff0000; /* Example: Set text color to match your theme */
+}
+.heading-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically if necessary */
+    width: 100%;             /* Make the container full width */
+}
+
+/* Reviews title styling */
+#modal-reviews-title {
+    font-size: 20px; /* Font size for the reviews title */
+    font-weight: bold; /* Bold font weight */
+    color: #007bff; /* Blue color for emphasis */
+    margin-top: 15px; /* Space above the title */
+    margin-bottom: 5px; /* Space below the title */
+}
+/* About title styling */
+#modal-about-title {
+    font-size: 20px; /* Font size for the about title */
+    font-weight: bold; /* Bold font weight */
+    color: #ff0000; /* Red color for emphasis */
+    margin-bottom: 5px; /* Space below the title */
+}
+/* Features title styling */
+#modal-genres-title {
+    font-size: 20px; /* Font size for the features title */
+    font-weight: bold; /* Bold font weight */
+    color: #28a745; /* Green color for emphasis */
+    margin-top: 15px; /* Space above the title */
+    margin-bottom: 0px; /* Space below the title */
+}
+
+/* Features section styling */
+#modal-genres {
+    margin-top: 10px; /* Space above features section */
+    font-size: 16px; /* Font size for features */
+    background-color: #f9f9f9; /* Light grey background */
+    padding: 10px; /* Padding inside the features section */
+    border-left: 5px solid #28a745; /* Green left border */
+    border-radius: 5px; /* Rounded corners for the features section */
+    color: #333; /* Dark text color for visibility */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

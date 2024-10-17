@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OG-Only GAmers</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+        <!-- Loading Screen -->
+    <div id="loading-screen">
+        <h1>Only For OG's</h1>
+    </div>
+     <!-- Main Content -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home  🏠︎  </a></li>
+                <li><a href="/products.html">Products</a></li>
+                <li><a href="/top-sellers.html">Top Sellers</a></li>
+                <li><a href="/most-played.html">Most Played</a></li>
+                <li><a href="/cart.html">Cart 🛒 </a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-right">
+            <ul>
+                <a href="/login.html"  class="nav-link">Login</a>
+                <span class="separator">|</span>
+                <a href="/register.html"  class="nav-link">Register</a>
+            </ul>
+        </div>
+        <h1 class="store-name">OG-Only GAmers</h1>
+    </header>
+
+
+    <main>
+        
+        <!-- Hero Section -->
+        <section class="hero">
+            <h2>Welcome to the Ultimate Gaming Store</h2>
+            <p>Your one-stop-shop for the latest games, consoles, and accessories.</p>
+            <a href="#products" class="button">Shop Now</a>
+        </section>
+
+        <!-- Featured Products -->
+        <section id="products" class="product-list">
+            <h2>Popular Products</h2>
+
+            <div class="product" data-id="1" data-name="Game 1" data-price="59.99">
+                <img src="/images/game1.jpg" alt="Game 1">
+                <h3>Game 1</h3>
+                <p>₹2500.00</p>
+                <button onclick="addToCart(1)">Add to Cart</button>
+            </div>
+
+            <div class="product" data-id="2" data-name="Game 2" data-price="39.99">
+                <img src="/images/game2.jpeg" alt="Game 2">
+                <h3>Game 2</h3>
+                <p>₹4000.00</p>
+                <button onclick="addToCart(2)">Add to Cart</button>
+            </div>
+
+            <div class="product" data-id="3" data-name="Game 3" data-price="49.99">
+                <img src="/images/game3.jpeg" alt="Game 3">
+                <h3>Game 3</h3>
+                <p>₹3500.00</p>
+                <button onclick="addToCart(3)">Add to Cart</button>
+            </div>
+        </section>
+
+        <!-- Featured Categories Section -->
+        <section class="categories">
+            <h2>Featured Categories</h2>
+            <div class="category">
+                <img src="/images/categories/consoles.jpg" alt="Consoles">
+                <h3>Gaming Consoles</h3>
+                <p>Browse the latest PlayStation, Xbox, and Nintendo consoles.</p>
+                <a href="#" class="button">Shop Consoles</a>
+            </div>
+
+            <div class="category">
+                <img src="/images/categories/accessories.jpg" alt="Accessories">
+                <h3>Gaming Accessories</h3>
+                <p>Upgrade your experience with controllers, headsets, and more.</p>
+                <a href="#" class="button">Shop Accessories</a>
+            </div>
+
+            <div class="category">
+                <img src="/images/categories/pc.jpg" alt="PC Gaming">
+                <h3>PC Gaming</h3>
+                <p>High-performance gear for competitive PC gamers.</p>
+                <a href="#" class="button">Shop PC Gaming</a>
+            </div>
+        </section>
+
+        <!-- Special Offers Section -->
+        <section class="special-offers">
+            <h2>Special Offers</h2>
+            <div class="offer">
+                <h3>Limited Time Offer!</h3>
+                <p>Get 20% off on selected games and accessories. Use code <strong>GAME20</strong> at checkout.</p>
+                <a href="#products" class="button">Shop Now</a>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial">
+                <p>"I found the latest games here at great prices! Shipping was fast and the products are top-notch."</p>
+                <strong>- Alex, Hardcore Gamer</strong>
+            </div>
+
+            <div class="testimonial">
+                <p>"The best place to buy gaming gear! I got my PlayStation 5 on time, and the support team was amazing."</p>
+                <strong>- Jess, Gamer & Streamer</strong>
+            </div>
+
+            <div class="testimonial">
+                <p>"This is my go-to store for all gaming accessories. The quality is excellent, and prices are unbeatable."</p>
+                <strong>- Chris, Competitive PC Gamer</strong>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup Section -->
+        <section class="newsletter">
+            <h2>Stay Updated with Latest Offers!</h2>
+            <p>Sign up for our newsletter to receive exclusive discounts and the latest news on new arrivals.</p>
+            <form id="newsletter-form">
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <button type="submit" class="button">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 OG-Only GAmers. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

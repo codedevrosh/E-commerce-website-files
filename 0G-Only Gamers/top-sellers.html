@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Sellers - OG-Only GAmers</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home 🏠︎ </a></li>
+                <li><a href="/products.html">Products</a></li>
+                <li><a href="/top-sellers.html">Top Sellers</a></li>
+                <li><a href="/most-played.html">Most Played</a></li>
+                <li><a href="/cart.html">Cart 🛒</span></a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1 class="store-name">OG - Only Gamers</h1>
+    </header>
+    
+
+    <main>
+        <h2>Top Sellers</h2>
+        <div class="product-list">
+            <!-- Example Product 1 -->
+            <div class="product" data-id="1" data-name="Top Game 1" data-price="69.99">
+                <img src="/images/game1.jpg" alt="Top Game 1">
+                <h3>Top Game </h3>
+                <p>₹2500.00</p>
+                <button onclick="addToCart(1)">Add to Cart</button>
+            </div>
+            <!-- Example Product 2 -->
+            <div class="product" data-id="2" data-name="Top Accessory 1" data-price="49.99">
+                <img src="/images/categories/acc1.jpeg" alt="Top Accessory 1">
+                <h3>Top Accessory </h3>
+                <p>₹5000.00</p>
+                <button onclick="addToCart(2)">Add to Cart</button>
+            </div>
+            <!-- Add more top seller products as needed -->
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 OG-Only GAmers. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/product.js"></script>
+    <script src="/js/cart.js"></script>
+</body>
+</html>
